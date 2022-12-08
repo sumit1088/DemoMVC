@@ -72,7 +72,7 @@ jobs:
       uses: NuGet/setup-nuget@v1.1.1
       
     - name: Restore Nuget Packages  
-      uses: IT-Service/restore-nuget-packages@v1
+      run: nuget restore DemoMVC.sln
       
     - name: Build The Solution
       run: msbuild DemoMVC.sln
